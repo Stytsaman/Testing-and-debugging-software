@@ -31,5 +31,5 @@ This is my Game on C#
      Console.WriteLine("Регистрация прошла успешно!");
  }
 ```
-Сама менюха: <br />
+Меню игры: <br />
 ![alt text](imageMenu.png)
