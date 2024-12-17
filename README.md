@@ -32,4 +32,4 @@ This is my Game on C#
  }
 ```
 Сама менюха: <br />
-![alt text] (imageMenu.png)
+![alt text](imageMenu.png)
