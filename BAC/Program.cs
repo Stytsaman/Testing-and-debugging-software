@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BAC;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,22 +11,45 @@ namespace BAB
     {
         static void Main(string[] args)
         {
-            var rand = new Random();
-            var secretNumber = GenerateNumber(rand);
+            Console.WriteLine("1. Регистрация" +
+            "\n2. Авторизация (вход)" +
+            "\nЕсли вы играете впервые нажмите 1 " +
+            "\nЕсли вы уже играли нажмите 2 ");
+
+            string _menuChoise = Console.ReadLine();
+
+            switch (_menuChoise)
+            {
+                case "1":
+                    User.Register();
+                    break;
+
+                    case "2":
+                    User.Login();
+                    break;
+
+                default:
+                    Console.WriteLine("Неверный выбор.");
+                    break;
+            }
+
+
+            var _randNumber = new Random();
+            var _secretNumber = GenerateNumber(_randNumber);
 
             Console.WriteLine("Попробуйте угадать заданное число");
 
             while (true)
             {
                 Console.Write("Введите ваше число: ");
-                string input = Console.ReadLine();
+                string _inputNumber = Console.ReadLine();
 
-                if (int.TryParse(input, out int guess) && guess >= 1000 && guess <= 9999)
+                if (int.TryParse(_inputNumber, out int guess) && guess >= 1000 && guess <= 9999)
                 {
-                    var result = CompareNumbers(secretNumber, guess);
-                    Console.WriteLine(result);
+                    var _resultNumber = CompareNumbers(_secretNumber, guess);
+                    Console.WriteLine(_resultNumber);
 
-                    if (result == "Поздравляем Вы угадали число.")
+                    if (_resultNumber == "Поздравляем Вы угадали число.")
                     {
                         break;
                     }
@@ -36,6 +60,7 @@ namespace BAB
                     Console.WriteLine("Некорректный ввод. Введите четырёхзначное число.");
                 }
             }
+            Console.ReadLine();
         }
 
         static int GenerateNumber(Random rand)

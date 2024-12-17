@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\учеба\3 курс\5 семестр\ТиОП\BAC\BAC\obj\Debug\BAC.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\учеба\3 курс\5 семестр\ТиОП\BAC\BAC\obj\Debug\BAC.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\учеба\3 курс\5 семестр\ТиОП\BAC\BAC\bin\Debug\BAC.exe.config
+C:\Users\user\Desktop\учеба\3 курс\5 семестр\ТиОП\BAC\BAC\bin\Debug\BAC.exe
+C:\Users\user\Desktop\учеба\3 курс\5 семестр\ТиОП\BAC\BAC\bin\Debug\BAC.pdb
+C:\Users\user\Desktop\учеба\3 курс\5 семестр\ТиОП\BAC\BAC\obj\Debug\BAC.exe
+C:\Users\user\Desktop\учеба\3 курс\5 семестр\ТиОП\BAC\BAC\obj\Debug\BAC.pdb
